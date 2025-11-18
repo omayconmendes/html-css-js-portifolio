@@ -3,11 +3,10 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    font-family: "JetBrains Mono", monospace;
+    font-family: "JetBrains Mono", sans-serif;
 }
 
 html {
@@ -15,18 +14,20 @@ html {
 }
 
 p {
-    color: rgb(85,85,85);
+    color: rgb(85, 85, 85);
 }
 
 /* TRANSITION */
 
-a, .btn {
+a,
+.btn {
     transition: all 300ms ease;
 }
 
 /* DESKTOP NAV */
 
-nav, .nav-links {
+nav,
+.nav-links {
     display: flex;
 }
 
@@ -52,7 +53,7 @@ a:hover {
     color: grey;
     text-decoration: underline;
     text-underline-offset: 1rem;
-    text-decoration-color: rgb(181,181,181);
+    text-decoration-color: rgb(181, 181, 181);
 }
 
 .logo {
@@ -64,6 +65,7 @@ a:hover {
 }
 
 /* HAMBURGER MENU */
+
 #hamburger-nav {
     display: none;
 }
@@ -106,7 +108,7 @@ a:hover {
     text-align: center;
     font-size: 1.5rem;
     color: black;
-    text-decoration: none; 
+    text-decoration: none;
     transition: all 0.3 ease-in-out;
 }
 
@@ -135,14 +137,14 @@ a:hover {
 }
 
 .hamburger-icon span:first-child {
-    opacity: 1
+    opacity: 1;
 }
 
 .hamburger-icon span:first-child {
     transform: none;
 }
 
-/* SECTION */
+/* SECTIONS */
 
 section {
     padding-top: 4vh;
@@ -172,13 +174,8 @@ section {
     margin: auto 0;
 }
 
-.section__pic {
+.profile-pic {
     border-radius: 50%;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    overflow: hidden;
 }
 
 .section__text {
@@ -211,7 +208,7 @@ section {
     gap: 1rem;
 }
 
-/* ICON */
+/* ICONS */
 
 .icon {
     cursor: pointer;
@@ -236,7 +233,7 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-    border: rgb(53,53,53) 0.1rem solid;
+    border: rgb(53, 53, 53) 0.1rem solid;
 }
 
 .btn-color-1:hover,
@@ -246,16 +243,20 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-    background-color: rgb(53,53,53);
+    background: rgb(53, 53, 53);
     color: white;
 }
 
 .btn-color-1:hover {
-    background: rgb(0,0,0);
+    background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+    background: none;
 }
 
 .btn-color-2:hover {
-    background: rgb(255,255,255) 0.1rem solid
+    border: rgb(255, 255, 255) 0.1rem solid;
 }
 
 .btn-container {
@@ -266,8 +267,6 @@ section {
 
 #about {
     position: relative;
-    max-width: 1200px;
-    margin: auto;
 }
 
 .about-containers {
@@ -277,11 +276,12 @@ section {
 }
 
 .about-details-container {
-    justify-content:center;
+    justify-content: center;
     flex-direction: column;
 }
 
-.about-containers, .about-details-container {
+.about-containers,
+.about-details-container {
     display: flex;
 }
 
@@ -300,8 +300,8 @@ section {
     flex: 1;
     background: white;
     border-radius: 2rem;
-    border: rgb(53,53,53) 0.1rem solid;
-    border-color: rgb(163,163,163);
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
     text-align: center;
 }
 
@@ -320,12 +320,10 @@ section {
 
 #experience {
     position: relative;
-    max-width: 1200px;
-    margin: auto;
 }
 
 .experience-sub-title {
-    color: rgb(85,85,85);
+    color: rgb(85, 85, 85);
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
@@ -339,11 +337,11 @@ section {
 
 .article-container {
     display: flex;
+    text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
-    text-align: initial;
-    justify-content: space-around;
     gap: 2.5rem;
+    justify-content: space-around;
 }
 
 article {
@@ -361,13 +359,11 @@ article .icon {
 
 #projects {
     position: relative;
-    max-width: 1200px;
-    margin: auto;
 }
 
 .color-container {
-    border-color: rgb(163,163,163);
-    background: rgb(250,250,250);
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
 }
 
 .project-img {
@@ -376,17 +372,17 @@ article .icon {
     height: 90%;
 }
 
-.projetc-title {
+.project-title {
     margin: 1rem;
     color: black;
 }
 
-.projects-btn {
+.project-btn {
     color: black;
-    border-color: rgb(163,163,163);
+    border-color: rgb(163, 163, 163);
 }
 
-/* CONTACT SECTION */
+/* CONTACT */
 
 #contact {
     display: flex;
@@ -399,9 +395,9 @@ article .icon {
     display: flex;
     justify-content: center;
     border-radius: 2rem;
-    border: rgb(53,53,53) 0.1rem solid;
-    border-color: rgb(163,163,163);
-    background: rgb(250,250,250);
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: (250, 250, 250);
     margin: 2rem auto;
     padding: 0.5rem;
 }
@@ -431,13 +427,8 @@ article .icon {
 footer {
     height: 26vh;
     margin: 0 1rem;
-    max-width: 1200px;
-    margin: auto;
 }
 
 footer p {
     text-align: center;
 }
-
-
-
